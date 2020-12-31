@@ -38,8 +38,12 @@ public class Practice5 {
 		
 		/*
 		 * int defaltScore = 70;
-		 * 이렇게 해서 if문 하나로 만들어서 하는거...
-		 * 하...
+		 * if "가"||"나"
+		 * 	if "가" >> defaltScore = 60;
+		 *  if (score > defaltScore)
+		 * 이렇게 해서 if문 하나안에 쇽샥 만들어서 하는거...
+		 * 하...알지?
+		 * https://github.com/black-phantom2020
 		 */
 		
 		scan.close();
