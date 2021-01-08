@@ -2,12 +2,20 @@ package com.kita.first;
 
 public class ArrayOrder1 {
 	public static void main(String[] args) {
-		int[] arr1 = {1, 7, 45, 0, 2};
+		int[] arr = {1, 7, 45, 0, 2};
+		int temp;
 		
-		for(int i = 0; i < arr1.length-1; i++) {
-			for(int j = 0; j < arr1.length; j++) {
-				
+		for(int i = 0; i < arr.length-1; i++) {
+			for(int j = i + 1; j < arr.length; j++) {
+				if(arr[i] > arr[j]) {
+					temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
 			}
+		}
+		for(int num : arr) {
+			System.out.print(num+" ");
 		}
 	}
 }
