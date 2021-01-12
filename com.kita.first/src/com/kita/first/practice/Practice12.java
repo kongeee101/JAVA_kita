@@ -12,5 +12,6 @@ public class Practice12 {
 		for(int i = 0; i < star; i++) {
 			System.out.println("*");
 		}
+		
 	}
 }
