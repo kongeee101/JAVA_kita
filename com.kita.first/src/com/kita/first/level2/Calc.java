@@ -22,6 +22,7 @@ public class Calc {
 		int num2 = myCalc1.minus(n1, n2);
 		int num3 = myCalc1.multiply(n1, n2);
 		double num4 = myCalc1.divide(n1, n2);
+		int num5 = myCalc1.sum(n1, n2, 3);
 		
 		System.out.println("합 "+num1);
 		System.out.println("차 "+num2);
@@ -40,6 +41,11 @@ public class Calc {
 	
 	public int sum(int n1, int n2) {
 		int result = n1 + n2;
+		return result;
+	}
+	// 오버로딩 (매개변수의 차이가 있을 때 같은 이름의 메소드 가능)
+	public int sum(int n1, int n2, int n3) {
+		int result = n1 + n2 + n2;
 		return result;
 	}
 	public int minus(int n1, int n2) {
