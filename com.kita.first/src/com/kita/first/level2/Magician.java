@@ -8,7 +8,8 @@ public class Magician extends Adventurer{
 		this.mp = mp;
 	}
 	
-	@Override //오버라이딩 한다는 표시, 오버라이딩했는지 확인도 해줌
+	@Override // 오버라이딩 한다는 표시, 오버라이딩했는지 확인도 해줌
+	// 상속을 받아야지 가능
 	void attack() {
 		System.out.println("마법 공격을 한다.");
 	}
