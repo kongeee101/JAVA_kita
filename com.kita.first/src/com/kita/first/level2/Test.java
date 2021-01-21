@@ -24,5 +24,13 @@ public class Test {
 		volvo.setColor("검은색");
 		volvoColor = volvo.getColor();
 		System.out.println(volvoColor);
+		
+		System.out.println();
+		System.out.println();
+		
+		IMac iMac = new IMac(512, "스페이스 그레이");
+		iMac.setIMemory(1024);
+		int myMemory = iMac.getIMemory();
+		System.out.println(myMemory);
 	}
 }
