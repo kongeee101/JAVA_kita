@@ -1,6 +1,6 @@
 package com.kita.first.level3;
 
-public class Test {
+public class Test {	
 	public static void main(String[] args) {
 		Animal animal = new Animal();
 		Cat cat = new Cat();
@@ -12,7 +12,7 @@ public class Test {
 		//다형성
 		animal = cat;
 		animal.crying();
-		animal = new Dog();;
+		animal = new Dog();
 		animal.crying();
 //		animal.barking; // 안됨. 부모 클래스에 있는 메소드만 접근 가능
 		Dog dog1 = (Dog)animal;
@@ -63,5 +63,13 @@ public class Test {
 		
 		Lol lol = new Lol();
 		p1.platGame(lol);
+		
+		System.out.println();
+		System.out.println();
+		
+		ScanNum sn = new ScanNum();
+		String str = sn.inputNumString();
+		int result = Utils.parseStrToInt(str);
+		sn.printMsg(result);
 	}
 }
