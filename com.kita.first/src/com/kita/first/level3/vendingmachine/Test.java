@@ -1,39 +1,39 @@
 package com.kita.first.level3.vendingmachine;
 
-import java.util.Scanner;
-
 public class Test {
 	public static void main(String[] args) {
+//		String[] menuArr = { "콜라", "사이다", "캔커피", "데자와", "환타", "웰치스" };
+//		int[] priceArr = { 900, 700, 400, 500, 600, 1000 };
+		
 		int len = 6;
 		Menu menu = new Menu(len);
+		PrintV pv = new PrintV();
 		
-		String[] menuArr = { "콜라", "사이다", "캔커피", "데자와", "환타", "웰치스" };
-		int[] priceArr = { 900, 700, 400, 500, 600, 1000 };
-		Scanner scan = new Scanner(System.in);
-		int total = 0;
+		menu.inputArrItem();
+		menu.inputArrPrice();
 		
 		System.out.println("--메뉴--");
-		for(int i = 0; i < menuArr.length; i++) {
-			System.out.printf("%d. %s %d원\n", i+1, menuArr[i], priceArr[i]);
+		for(int i = 0; i < len; i++) {
+			pv.printMenu(menu, i);
 		}
 		
+		Game game = new Game();
+		int myNum;
+		
 		while(true) {
-			System.out.print("메뉴를 입력하세요(0 입력 시 종료): ");
-			int num = scan.nextInt();
+			myNum = game.inputNum();
 			
-			if(num == 0) {
-				break;
-			}
-			else if(num > 6 || num < 0) {
+			if(myNum < 0 || myNum > len) {
 				System.out.println("잘못입력하셨습니다.");
 				continue;
+			} else if (myNum == 0){
+				break;
 			}
 			
-			total += priceArr[num-1];
-			
-			System.out.printf("%s %d원\n", menuArr[num-1], priceArr[num-1]);
+			game.sumMenuPrice(menu, myNum);
+			pv.printMenu(menu, myNum);
 		}
-		System.out.printf("합계 : %d원", total);
-		scan.close();
+		
+		
 	}
 }

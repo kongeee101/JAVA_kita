@@ -31,18 +31,18 @@ public class Menu {
 	}
 	
 	//메소드 값 입력
-	public void inputArrItem(String[] arr){
+	public void inputArrItem(){
 		Scanner scan = new Scanner(System.in);
-		for(int i = 0; i < arr.length; i++) {
+		for(int i = 0; i < menuArr.length; i++) {
 			System.out.printf("%d번째 값 입력 : ", i+1);
 			String str = scan.next();
-			arr[i] = str;
+			menuArr[i] = str;
 		}
 		scan.close();
 	}
-	public void inputArrItem(int[] arr){
+	public void inputArrPrice(){
 		Scanner scan = new Scanner(System.in);
-		for(int i = 0; i < arr.length; i++) {
+		for(int i = 0; i < priceArr.length; i++) {
 			System.out.printf("%d번째 값 입력 : ", i+1);
 			String str = scan.next(); //int num = scan.nextInt();
 			int num = Utils.parseStrToInt(str);
@@ -51,7 +51,7 @@ public class Menu {
 				i--;
 				continue;
 			}
-			arr[i] = num;
+			priceArr[i] = num;
 		}
 		scan.close();
 	}
