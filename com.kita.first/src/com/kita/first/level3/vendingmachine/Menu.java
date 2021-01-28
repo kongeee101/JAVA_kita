@@ -1,7 +1,6 @@
 package com.kita.first.level3.vendingmachine;
 
 import java.util.Scanner;
-
 import com.kita.first.level3.Utils;
 
 public class Menu {
@@ -38,7 +37,6 @@ public class Menu {
 			String str = scan.next();
 			menuArr[i] = str;
 		}
-		scan.close();
 	}
 	public void inputArrPrice(){
 		Scanner scan = new Scanner(System.in);
@@ -53,6 +51,5 @@ public class Menu {
 			}
 			priceArr[i] = num;
 		}
-		scan.close();
 	}
 }

@@ -4,7 +4,7 @@ public class PrintV {
 	void printMenu(Menu menu, int i){
 		String item = menu.getMenuItem(i);
 		int price = menu.getMenuPrice(i);
-		System.out.printf("%d. %s %d원\n", i+1, item, price);
+		System.out.printf("%d. %s %d원\n", i, item, price);
 	}
 	
 	void printTotalPrice(Game game) {

@@ -30,7 +30,7 @@ public class Test {
 				break;
 			}
 			
-			game.sumMenuPrice(menu, myNum);
+			game.sumMenuPrice(menu, myNum-1);
 			pv.printMenu(menu, myNum);
 		}
 		
