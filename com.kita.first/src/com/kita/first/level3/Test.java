@@ -2,24 +2,24 @@ package com.kita.first.level3;
 
 public class Test {	
 	public static void main(String[] args) {
-		Animal animal = new Animal();
-		Cat cat = new Cat();
+//		Animal animal = new Animal();
+//		Cat cat = new Cat();
 		
-		animal.crying();
+//		animal.crying();
 		
 //		animal = new Animal();
 		
 		//다형성
-		animal = cat;
-		animal.crying();
-		animal = new Dog();
-		animal.crying();
+//		animal = cat;
+//		animal.crying();
+//		animal = new Dog();
+//		animal.crying();
 //		animal.barking; // 안됨. 부모 클래스에 있는 메소드만 접근 가능
-		Dog dog1 = (Dog)animal;
-		dog1.barking(); // 이렇게 하면 가능, 객체 강제 형변환, 자식객체를 부모타입의 변수에 넣은 상태일때
-		//instanceof : 객체 확인?
-		boolean result1 = animal instanceof Dog;
-		System.out.println(result1);
+//		Dog dog1 = (Dog)animal;
+//		dog1.barking(); // 이렇게 하면 가능, 객체 강제 형변환, 자식객체를 부모타입의 변수에 넣은 상태일때
+//		//instanceof : 객체 확인?
+//		boolean result1 = animal instanceof Dog;
+//		System.out.println(result1);
 		
 		
 //		System.out.println(animal);

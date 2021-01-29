@@ -18,9 +18,10 @@ public class Checker {
 			}
 		}
 		System.out.printf("S : %d / B : %d / O : %d\n", strike, ball, LEN-strike-ball);
-		if(strike == LEN) {
-			return false;
-		}
-		return true;
+//		if(strike == LEN) {
+//			return false;
+//		}
+//		return true;
+		return strike != LEN;
 	}
 }

@@ -6,12 +6,12 @@ public class TryCatch {
 //		int num1 = Integer.parseInt(str);
 		double num2 = Double.parseDouble(str);
 		
-		Animal ani = new Animal();
+//		Animal ani = new Animal();
 		Cat cat = new Cat();
-		ani = cat;
+//		ani = cat;
 		
 		try {
-			Dog dog = (Dog)ani;
+//			Dog dog = (Dog)ani;
 		} catch(Exception e) { // 에러가 터지면 실행
 //			e.printStackTrace();
 			System.out.println("문제 발생");

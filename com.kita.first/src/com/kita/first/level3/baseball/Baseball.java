@@ -1,5 +1,7 @@
 package com.kita.first.level3.baseball;
 
+import java.util.Arrays;
+
 public class Baseball {
 //	 컴퓨터가 랜덤으로 숫자 뽑는 클래스
 	//필드
@@ -29,10 +31,11 @@ public class Baseball {
 				}
 			}
 		}
-		for(int num : rArr) {
-			System.out.print(num + " ");
-		}
-		System.out.println();
+//		for(int num : rArr) {
+//			System.out.print(num + " ");
+//		}
+//		System.out.println();
+		System.out.println(Arrays.toString(rArr));
 	}
 	//getter setter
 	public void setrArr(int[] rArr) {
