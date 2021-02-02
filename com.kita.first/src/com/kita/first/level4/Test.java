@@ -35,6 +35,12 @@ public class Test {
 		
 		//익명객체 : 객체를 한번만 쓸때 간단하게 처리 가능, 세미콜론 필요
 		Parent p = new Parent() {
+			String childField = "자식필드"; //이 안에서만 쓸 수 있음
+			
+			void childMethod() {
+				System.out.println("자식 메소드입니다.");
+			} //이 안에서만 쓸 수 있음
+			
 			@Override
 			void parentMethod() {
 				System.out.println("자식 객체입니다.");
