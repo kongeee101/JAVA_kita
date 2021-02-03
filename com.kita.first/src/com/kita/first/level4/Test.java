@@ -43,7 +43,7 @@ public class Test {
 			
 			@Override
 			void parentMethod() {
-				System.out.println("자식 객체입니다.");
+				System.out.println(childField + "자식 객체입니다.");
 			};
 		};
 		

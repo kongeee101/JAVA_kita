@@ -1,6 +1,6 @@
 package com.kita.first.level4;
 
-public class Cd {
+public class Cd /*extends thread*/ { //스레드~
 	String name;
 	String producer;
 	int year;
